@@ -25,7 +25,7 @@ export const commentsSlice = createSlice({
 
     editComment : (state, action) => {
       state.comments = state.comments.map((comment) => 
-      comment.id ===action.payload.id ? action.payload : comment) ;
+      comment.id === action.payload.id ? action.payload : comment) ;
     },
 
     favoriteComment : (state, action: PayloadAction<Comment>) => {

@@ -30,10 +30,6 @@ const AddComment = () => {
 
         dispatch(addComment(newComment));
 
-        setNameValue("")
-        setEmailValue("")
-        setBodyValue("")
-
         alert("Comentario guardado correctamente")
         console.log(commentsLocal);
         navigate("/")
